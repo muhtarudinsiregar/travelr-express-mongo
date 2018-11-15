@@ -26,16 +26,17 @@
 }
 ```
 
-* `GET: place/all`
+* GET: place/all
 
-* `GET: /place/<placeId>/destroy`
-```
-ex: localhost:3000/place/5bed596bc493902b6eb557a4/destroy
-```
+![alt text](https://github.com/muhtarudinsiregar/travelr-express-mongo/raw/master/screenshoot/all.png "Get places")
 
-* `PUT: /place/<placeId>/update`
+* GET: /place/<placeId>/destroy
+
+* PUT: /place/<placeId>/update
 ```
 //payload : location, latitude, longitude
 ```
 
-* `GET: /place/<placeId>/show`
+* GET: /place/<placeId>/show
+
+![alt text](https://github.com/muhtarudinsiregar/travelr-express-mongo/raw/master/screenshoot/respon_show.png "Response show place")
