@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/place', place);
 app.get('/', (req, res) => {
-    res.send(process.env.DB_USERNAME);
+    res.send("Hellow world");
 })
 let port = process.env.PORT || 3000;
 
