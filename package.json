@@ -9,10 +9,13 @@
         "express": "^4.16.4",
         "mongoose": "^5.3.12"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "nodemon": "^1.18.6"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node app.js"
+        "start": "node app.js",
+        "serve": "./node_modules/.bin/nodemon app.js"
     },
     "author": "",
     "license": "ISC"

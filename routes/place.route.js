@@ -9,6 +9,6 @@ router.get('/all', place_controller.all);
 router.post('/store', place_controller.store);
 router.put('/:id/update', place_controller.update);
 
-router.get('/:id', place_controller.show);
+router.get('/:id/show', place_controller.show);
 router.delete('/:id/destroy', place_controller.destroy);
 module.exports = router;
