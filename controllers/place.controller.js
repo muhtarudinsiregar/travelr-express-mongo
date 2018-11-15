@@ -17,18 +17,12 @@ exports.all = function (req, res) {
 };
 
 exports.store = function (req, res) {
-    let place = new Place(
-        {
-            location: req.body.location,
-            latitude: req.body.latitude,
-            longitude: req.body.longitude
-        }
-    );
+    (async function () {
 
-    place.save(function (err) {
-        if (err) return console.error(err);
-        res.send('Place Created successfully')
-    })
+        const insertMany = await Place.insertMany(req.body.places);
+
+        res.status(200).json({ status: 'success', message: 'Place Created successfully' });
+    })();
 };
 
 exports.update = function (req, res) {
